@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.author = "Adam Gotterer"
   s.email = "adam@shopalytic.com"
   s.platform = Gem::Platform::RUBY
-  s.summary = "Sequel upsert support for PostgreSQL"
+  s.summary = "Sequel upsert"
   s.description = "Sequel upsert support for PostgreSQL"
   s.files = Dir.glob("{lib}/**/*") + %w(README.md MIT-LICENSE)
   s.test_files = Dir.glob("{spec}/**/*")
@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.license = 'MIT'
   s.homepage = 'https://github.com/Shopalytic/sequel_upsert'
   s.rdoc_options = ['--inline-source', '--line-numbers', '--title', 'Sequel Upsert: Upsert suport for postgres through sequel', 'README', 'MIT-LICENSE', 'lib']
-  s.add_dependency('sequel')
+  s.add_dependency('sequel', '4.18.0')
   s.required_ruby_version = '>= 1.9.2'
-  s.add_development_dependency 'rspec', '>= 1.2.9'
+  s.add_development_dependency 'rspec', '1.2.9'
 end
