@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.license = 'MIT'
   s.homepage = 'https://github.com/Shopalytic/sequel_upsert'
   s.rdoc_options = ['--inline-source', '--line-numbers', '--title', 'Sequel Upsert: Upsert suport for postgres through sequel', 'README', 'MIT-LICENSE', 'lib']
-  s.add_dependency('sequel', '4.18.0')
+  s.add_dependency('sequel', '~> 4.18', '>= 4.18.0')
   s.required_ruby_version = '>= 1.9.2'
   s.add_development_dependency 'rspec', '1.2.9'
 end
